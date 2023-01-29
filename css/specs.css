@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.info {
+    width: 900px;
+    margin: auto;
+}
+.info img {
+    top: 0;
+    width: 420px;
+    margin-right:50px;
+}
+.frame-specs {
+    width: 400px;
+    height: 275px;
+    border: none;
+    overflow: hidden;
+}
+p {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.interface {
+    padding-bottom: 0px;
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* GERAL */
+::selection {
+    background-color: hsl(0,0%,5%);
+    color: white;
+}
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-fundo);
+    padding:0;
+    margin: 0;
+    width: 400px;
+    text-align: center;
+}
+h1 {
+    font-size: 18pt;
+    padding: 7px;
+    background-color: grey;
+    color: white;
+}
+p {
+    text-align: justify;
+}
+img {
+    padding-top: 10px;
+    width:90px;
+}
