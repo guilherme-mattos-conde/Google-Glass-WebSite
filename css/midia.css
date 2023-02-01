@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+:root {
+    --tam-img: 300px 300px;
+    --tam-img-hover: 250px 250px;
+}
+p {
+    padding-top: 10px;
+    text-align: justify;
+}
+.album {
+    width: 900px;
+    margin: 0px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left:-20px;
+    overflow: hidden;
+    list-style: none;
+}
+.album li {
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    text-align: center;
+    transition: all .3s ease-in;
+}
+.album li:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px var(--cor-sombra);
+}
+.album span {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 5px;
+    text-shadow: 0px 0px 1px black;
+    font-size: 9pt;
+    line-height: 475px;
+    transition: .3s;
+}
+.album li:hover span{
+    opacity: 1;
+}
+
+
+/* FOTOS */
+.foto-01 {
+    background: url('../imagens/galeria-01.jpg');
+    background-size: var(--tam-img);
+    background-position: 50% 50%;
+    transition: 1s;
+}
+.foto-01:hover {
+    background-position: 0px 0px;
+    background-size: var(--tam-img-hover);
+}
+.foto-02 {
+    background: url('../imagens/galeria-02.jpg');
+    background-size: var(--tam-img);
+    background-position: 50% 50%;
+}
+.foto-02:hover {
+    background-position: 0px 0px;
+    background-size: var(--tam-img-hover);
+}
+.foto-03 {
+    background: url('../imagens/galeria-03.jpg');
+    background-size: var(--tam-img);
+    background-position: 50% 50%;
+}
+.foto-03:hover {
+    background-position: 0px 0px;
+    background-size: var(--tam-img-hover);
+}
+.foto-04 {
+    background: url('../imagens/galeria-04.jpg');
+    background-size: var(--tam-img);
+    background-position: 50% 50%;
+}
+.foto-04:hover {
+    background-position: 0px 0px;
+    background-size: var(--tam-img-hover);
+}
+.foto-05 {
+    background: url('../imagens/galeria-05.jpg');
+    background-size: var(--tam-img);
+    background-position: 50% 50%;
+}
+.foto-05:hover {
+    background-position: 0px 0px;
+    background-size: var(--tam-img-hover);
+}
+.foto-06 {
+    background: url('../imagens/galeria-06.jpg');
+    background-size: var(--tam-img);
+    background-position: 50% 50%;
+}
+.foto-06:hover {
+    background-position: 0px 0px;
+    background-size: var(--tam-img-hover);
+}
+
+
+/* VIDEO */
+.video-midia {
+    width: 830px;
+    margin: 0 auto;
+    margin-left: 40px;
+    transition: all .3s ease-in;
+}
+.video-midia:hover {
+    box-shadow: 0px 0px 15px var(--cor-sombra);
+    transform: scale(1.03);
+}
