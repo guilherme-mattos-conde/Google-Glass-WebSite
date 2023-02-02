@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="icon" type="image/png" href="imagens/glass-icone.png"/>
+    <title>Google Glass</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <a href="index.html"><img src="imagens/glass-logo-peq.jpg"></a>
+        <ul class="lista-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="specs.html">Especificações</a></li>
+            <li><a href="midia.html">Mídia</a></li>
+            <li><a href="fale-conosco.html">Fale Conosco</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="cabecalho">
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando</h2>
+        <h3>Fale Conosco > Contato</h3>
+        </header>
+
+        <hgroup class="sub-cabecalho">
+        <h1>Formulário de Contato</h1>
+        <h2>por Guilherme Mattos | Atualizado em Maio/2023</h2>
+        </hgroup>
+
+    <form method="post">
+    
+    <fieldset><legend>Identificação do Usuário</legend>
+
+        <div class="oneInput">
+            <input type="text" name="tNome" id="cNome" placeholder="Nome Completo" firt="" required><label for="cNome" class="labelOneInput">Nome Completo</label>
+        </div>
+
+        <div class="oneInput">
+            <input type="password" name="tSenha" id="cSenha" minlength="8" maxlength="20" placeholder="Senha" required><label for="cSenha" class="labelOneInput">Senha</label>
+        </div>
+
+        <div class="oneInput">
+            <input type="email" name="tEmail" id="cEmail" placeholder="E-mail" required><label for="cEmail" class="labelOneInput">E-mail</label>
+        </div>
+
+        <h1 id="identificador">Data de Nascimento</h1>
+        
+        <div class="treeInputs">
+        <input class="one" type="number" name="tDia" id="cDia" min="1" max="31" placeholder="Dia" required><label for="cDia" class="labelTreeInputsOne">Dia</label>
+        <input class="two" type="number" name="tMes" id="cMes" min="1" max="12" placeholder="Mês" required><label for="cMes" class="labelTreeInputsTwo">Mês</label>
+        <input class="tree" type="number" name="tAno" id="cAno" min="1900" max="9999" placeholder="Ano" required><label for="cAno" class="labelTreeInputsTree">Ano</label>
+        </div>
+
+        <h1 id="identificador">Sexo</h1>
+
+        <div class="sexo">
+        <input type="radio" name="tGenero" id="cFeminino" value="feminino" placeholder="Feminino" required><label class="one" for="cFeminino">Feminino</label>
+        <input type="radio" name="tGenero" id="cMasculino" value="Masculino" placeholder="Masculino" required><label class="two" for="cMasculino">Masculino</label>
+        <input type="radio" name="tGenero" id="cOutro" value="Outro" placeholder="Outro" required><label class="tree" for="cOutro">Outro</label>
+        </div>
+
+    </fieldset>
+
+    <fieldset><legend>Endereço do Usuário</legend>
+
+        <div id="endereco">
+
+        <div class="oneInput">
+            <input type="text" name="tRua" id="cRua" maxlength="50" placeholder="Rua" required><label for="cRua" class="labelOneInput">Rua</label>
+        </div>
+
+        <div class="twoInputs">
+            <input class="one" type="text" name="tCep" id="cCep" maxlength="8" placeholder="CEP" required><label for="cCep" class="labelTwoInputsOne">CEP</label>
+            <input class="two" type="text" name="tBairro" id="cBairro" maxlength="50" placeholder="Bairro" required><label for="cBairro" class="labelTwoInputsTwo">Bairro</label>
+        </div>
+
+        <div class="twoInputs">
+        <input class="one" type="text" name="tNum" id="cNum" maxlength="8" placeholder="Número" required><label for="cNum" class="labelTwoInputsOne">Número</label>
+        <input class="two" type="text" name="tCompl" id="cCompl" placeholder="Complemento" required><label for="cCompl" class="labelTwoInputsTwo">Complemento</label></div>
+
+        <div class="twoInputs">
+            <select name="tEstado" id="cEstado" class="selectOne" required>
+                <option value=""></option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select><label for="cEstado" class="labelTwoInputsOne">UF</label>
+            <input class="two" type="text" name="tCidade" id="cCidade" placeholder="Cidade" required><label for="cCidade" class="labelTwoInputsTwo">Cidade</label>
+        </div>
+
+    </fieldset>
+
+    <fieldset><legend>Quero um Google Glass</legend>
+
+        <div class="twoInputs">
+            <select name="tCor" id="cCor" class="selectOne" required>
+                <option value=""></option>
+                <option value="Preto">Preto</option>
+                <option value="Cinza">Cinza</option>
+            </select><label for="cCor" class="labelTwoInputsOne">Cor</label>
+            <input class="two" type="number" name="tQntd" id="cQntd" min="1" max="999" placeholder="Quantidade" required><label for="cQntd" class="labelTwoInputsTwo">Quantidade</label>
+        </div>
+
+        <div class="oneInput">
+            <input type="text" name="tMsg" id="cMsg" placeholder="Mensagem" required><label for="cMsg" class="labelOneInput">Mensagem</label>
+        </div>
+        
+    </fieldset>
+
+    <input type="submit" value="Enviar Formulário" id="enviar"></label>
+    </form>
+    </main>
+
+    <footer class="rodape">
+        <h1>&copy; 2023 by Guilherme Mattos Conde</h1>
+        <h2><a href="mailto:guimattos205@gmail.com" target="blank">Gmail</a> | <a href="https://github.com/guilherme-mattos-conde" target="blank">GitHub</a> | <a href="https://www.linkedin.com/in/guilherme-mattos-conde/" target="blank">Linkedin</a></h2>
+    </footer>
+</body>
+</html>

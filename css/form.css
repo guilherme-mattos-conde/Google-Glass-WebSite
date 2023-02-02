@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin: 50px auto 0 auto;
+}
+fieldset {
+    position: relative;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+}
+legend {
+    text-align: center;
+    font-size:18pt;
+}
+#enviar {
+    font-size: 12pt;
+    border: 2px solid gray;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    font-family: 'Montserrat', sans-serif;
+    transition: .8s;
+    color: var(--cor-primaria);
+}
+#enviar:hover {
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+    border: 2px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    text-shadow: 0px 0px 2px var(--cor-sombra);
+}
+#identificador {
+    margin: 5px 0px;
+    font-size:14pt;
+    font-weight: 200;
+}
+input::placeholder {
+    color: transparent;
+}
+
+/* INPUTS */
+.oneInput input, .twoInputs .one, .twoInputs .selectOne, .twoInputs .two, .treeInputs .one, .treeInputs .two, .treeInputs .tree {
+    border-radius: 8px;
+    font-size: 12pt;
+    margin: 10px 0px 10px 0px;
+    padding: 5px 5px;
+    border: 1px solid gray;
+    font-family: 'Montserrat', sans-serif;
+    transition: .5s;
+}
+.oneInput input { width: 95%; }
+
+.twoInputs .one { width: 35%; }
+
+.twoInputs .selectOne { width: 38.5%; }
+
+.twoInputs .two { width: 55%; }
+
+.treeInputs .one, .treeInputs .two, .treeInputs .tree { width: 28.4%; }
+
+.sexo { padding-top: 5px; padding-bottom: 5px; }
+
+.sexo .one { padding-right: 10px; }
+
+.sexo .two { padding-right: 12px; }
+
+.sexo .tree { padding-right: 30px; }
+
+/* LABEL */
+.labelOneInput, .labelTwoInputsOne, .labelTwoInputsTwo, .labelTreeInputsOne, .labelTreeInputsTwo, .labelTreeInputsTree {
+    position: absolute;
+    font-size: 12pt;
+    margin-top: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.labelOneInput, .labelTwoInputsOne, .labelTreeInputsOne { left: 29px; }
+
+.labelTwoInputsTwo { left: 162px; }
+
+.labelTreeInputsTwo { left: 139px }
+
+.labelTreeInputsTree { left: 249px }
+
+/* VALIDACAO */
+input:focus ~ .labelOneInput, input:valid ~ .labelOneInput, .twoInputs .one:focus ~ .labelTwoInputsOne, .twoInputs .one:valid ~ .labelTwoInputsOne, .twoInputs .two:focus ~ .labelTwoInputsTwo, .twoInputs .two:valid ~ .labelTwoInputsTwo, .twoInputs .selectOne:focus ~ .labelTwoInputsOne, .twoInputs .selectOne:valid ~ .labelTwoInputsOne, .treeInputs .one:focus ~ .labelTreeInputsOne, .treeInputs .one:valid ~ .labelTreeInputsOne, .treeInputs .two:focus ~ .labelTreeInputsTwo, .treeInputs .two:valid ~ .labelTreeInputsTwo, .treeInputs .tree:focus ~ .labelTreeInputsTree, .treeInputs .tree:valid ~ .labelTreeInputsTree {
+    margin-left: -5px;
+    margin-top: -5px;
+    font-size: 9pt;
+}
+input:not(:placeholder-shown):invalid ~ .labelOneInput, .twoInputs .one:not(:placeholder-shown):invalid ~ .labelTwoInputsOne, .twoInputs .two:not(:placeholder-shown):invalid ~ .labelTwoInputsTwo, .treeInputs .one:not(:placeholder-shown):invalid ~ .labelTreeInputsOne, .treeInputs .two:not(:placeholder-shown):invalid ~ .labelTreeInputsTwo, .treeInputs .tree:not(:placeholder-shown):invalid ~ .labelTreeInputsTree {
+    margin-left: -5px;
+    margin-top: -5px;
+    font-size: 9pt;
+    color: var(--cor-invalid);
+}
+input:not(:placeholder-shown):invalid, .twoInputs .one:not(:placeholder-shown):invalid, .twoInputs .two:not(:placeholder-shown):invalid, .treeInputs .one:not(:placeholder-shown):invalid, .treeInputs .two:not(:placeholder-shown):invalid, .treeInputs .tree:not(:placeholder-shown):invalid {
+    border-color: var(--cor-invalid);
+}
