@@ -1,7 +1,7 @@
 <h1>Google-Glass | Welcome to my repository ✌</h1>
 
 <p align="justify">In this repository I made a new version of the website that the teacher <a href="https://github.com/gustavoguanabara">@gustavoguanabara</a> proposed on his course.</p>
-<p> You can see the result by <a href="https://guilherme-mattos-conde.github.io/Google-Glass/">clicking here</a>.</p>
+<p> You can see the result by <a href="https://guilherme-mattos-conde.github.io/Google-Glass-WebSite/">clicking here</a>.</p>
 
 <br/>
 <div align="left">
